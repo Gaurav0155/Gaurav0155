@@ -1,0 +1,15 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <% if (data.length > 0) { %>
+        <% for( let i = 0; i < data.length; i++ ) { %>
+          <li class="nav-item">
+            <a class="nav-link" href=" <%= data[i].user_module%> ">
+             
+              <span class="menu-title"> <%= data[i].id%>&nbsp; <%= data[i].module_link%> </span>
+            </a>
+          </li>
+         
+        <% } %>
+      <% } %>
+    </ul>
+</nav>
